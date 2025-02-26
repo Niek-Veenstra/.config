@@ -35,6 +35,11 @@ function add() {
   git add $@
 }
 
+function submodules() {
+  git submodule init
+  git submodule update --recursive --remote
+}
+
 # END REGION GIT.
 
 # REGION DOCKER.
