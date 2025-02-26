@@ -39,7 +39,9 @@ function submodules() {
   git submodule init
   git submodule update --recursive --remote
 }
-
+function pull() {
+  git pull $@
+}
 # END REGION GIT.
 
 # REGION DOCKER.
