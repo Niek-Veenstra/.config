@@ -6,7 +6,7 @@ function reload() {
 }
 
 function profile() {
-  nvim "$HOME/.profile.sh"
+  nvim "$HOME/.config/.profile.sh"
 }
 
 function c() {
