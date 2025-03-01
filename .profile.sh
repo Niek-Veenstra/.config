@@ -42,6 +42,10 @@ function submodules() {
 function pull() {
   git pull $@
 }
+
+function dsh() {
+  docker exec -it $1 sh
+}
 # END REGION GIT.
 
 # REGION DOCKER.
