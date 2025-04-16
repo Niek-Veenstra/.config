@@ -39,17 +39,18 @@ function submodules() {
   git submodule init
   git submodule update --recursive --remote
 }
+
 function pull() {
   git pull $@
-}
-
-function dsh() {
-  docker exec -it $1 sh
 }
 # END REGION GIT.
 
 # REGION DOCKER.
-function dps() {
+function dsh() {
+  docker exec -it $1 sh
+}
+
+function dls() {
   docker ps
 }
 
