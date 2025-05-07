@@ -39,8 +39,13 @@ function submodules() {
   git submodule init
   git submodule update --recursive --remote
 }
+
 function pull() {
   git pull $@
+}
+
+function checkout() {
+  git checkout $@
 }
 # END REGION GIT.
 
