@@ -50,7 +50,11 @@ function checkout() {
 # END REGION GIT.
 
 # REGION DOCKER.
-function dps() {
+function dsh() {
+  docker exec -it $1 sh
+}
+
+function dls() {
   docker ps
 }
 
