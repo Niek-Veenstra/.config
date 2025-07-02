@@ -70,3 +70,8 @@ function dis() {
   docker container inspect $@
 }
 # END REGION DOCKER
+
+# START REGION NPM.
+alias nrd="npm run dev"
+alias npmi="npm install"
+# END REGION NPM.
